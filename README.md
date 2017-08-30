@@ -1,0 +1,2 @@
+# AG-Admin-v2.0
+AG-Admin-v2是基于Spring Cloud实现的前后端分离的后台管理信息系统，基于JWT交互协议来实现服务的无状态，具备用户管理、菜单管理、权限管理等多个模块，支持多业务系统并行开发，可以作为后台管理系统的脚手架。代码简洁，架构清晰，适合学习和直接项目中使用。核心技术采用Eureka、Fegin、Ribbon、Zuul、Hystrix、Mybatis、Ace-cache等主要框架和中间件，前端采用vue2.0 + element UI组件。
