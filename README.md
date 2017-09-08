@@ -32,9 +32,6 @@
 
 ![img](http://ofsc32t59.bkt.clouddn.com/17-08-30/1504049160560.jpg)
 
-## 声明
-2.0的源码不会开源，如有意向着，请加微信
-
 ![img](http://ofsc32t59.bkt.clouddn.com/17-09-06/1504661821484.jpg)
 #### 附送
 - `AG-Admin-v2.0`开发指南
