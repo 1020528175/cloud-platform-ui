@@ -8,7 +8,7 @@ QQ群号：169824183（1）、661605461（2）
 
 账号/密码：admin/admin
 
-![Markdown](http://i1.buimg.com/1949/39fbe8cbf5fd961f.png)
+![img](http://ofsc32t59.bkt.clouddn.com/17-09-12/1505228337599.jpg)
 
 
 
