@@ -159,8 +159,8 @@ const user = {
     }) {
       return new Promise(resolve => {
         commit('SET_TOKEN', '');
-        commit('SET_MENUS', {});
-        commit('SET_ELEMENTS', {});
+        commit('SET_MENUS', undefined);
+        commit('SET_ELEMENTS', undefined);
         removeToken();
         resolve();
       });
