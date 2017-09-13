@@ -27,7 +27,6 @@ Vue.component('Sticky', Sticky);
 Vue.component('icon-svg', IconSvg)
 Vue.use(ElementUI);
 Vue.use(vueWaves);
-Vue.use(VueResource);
 // register global utility filters.
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
