@@ -1,10 +1,8 @@
-# vue-element-admin #
+# AG-Admin-v2-UI 
 
-## 开发
+## 开发运行
 ```bash
-    # 克隆项目
-    git clone https://github.com/PanJiaChen/vue-element-admin.git
-
+   
     # 安装依赖
     npm install
     //or # 建议不要用cnpm  安装有各种诡异的bug 可以通过如下操作解决npm速度慢的问题
@@ -54,12 +52,11 @@
 
 ```
 
-## Changelog
-Detailed changes for each release are documented in the [release notes](https://github.com/PanJiaChen/vue-element-admin/releases).
-
 ## 状态管理
 后台只有user和app配置相关状态使用vuex存在全局，其它数据都由每个业务页面自己管理。
 
+## 感谢
+感谢作者：[PanJiaChen](https://github.com/PanJiaChen/vue-element-admin)
 
 ## License
 
