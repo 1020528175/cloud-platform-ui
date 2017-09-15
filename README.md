@@ -12,7 +12,7 @@ http://edu.csdn.net/course/detail/5840
 http://edu.csdn.net/course/detail/5914
 
 
-QQ群号：169824183（1）、661605461（2）
+QQ群号：169824183（满）、661605461（2）
 
 访问地址: http://120.77.133.155/
 
