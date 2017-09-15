@@ -3,6 +3,15 @@ AG-Admin是国内首个基于`Spring Cloud`微`服务`化`开发平台`，具有
 
 ## 如果有朋友用于实际项目中，欢迎在评论中留言公司名称。后续会放置首页，加以宣传。也欢迎大家支持AG-Admin，打造国内更好的`Spring Cloud`服务平台！
 
+
+## 推荐🌧
+考虑许多码友对于Spring Cloud的前后端分离和微服务实战有较多的疑问。老A专门录制课程如下，便于对AG-Admin更深入的了解
+- 【基础+进阶】课程地址：
+http://edu.csdn.net/course/detail/5840
+- 【直接进阶】课程地址：
+http://edu.csdn.net/course/detail/5914
+
+
 QQ群号：169824183（1）、661605461（2）
 
 访问地址: http://120.77.133.155/
@@ -79,12 +88,7 @@ QQ群号：169824183（1）、661605461（2）
 
 ![img](http://ofsc32t59.bkt.clouddn.com/17-08-30/1504048938195.jpg)
 
-## 福利🌧
-考虑许多码友对于Spring Cloud的前后端分离和微服务实战有较多的疑问，故本人将会后续展开课程
-- 【基础+进阶】课程地址：
-http://edu.csdn.net/course/detail/5840
-- 【直接进阶】课程地址：
-http://edu.csdn.net/course/detail/5914
+
 
 
 ## License
