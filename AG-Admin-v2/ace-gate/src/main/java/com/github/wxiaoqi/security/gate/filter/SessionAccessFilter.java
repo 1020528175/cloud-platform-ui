@@ -93,6 +93,7 @@ public class SessionAccessFilter extends ZuulFilter {
             // 查找合法链接
         } else
             setFailedRequest(JSON.toJSONString(new TokenErrorResponse("Token Forbidden!")), 200);
+
         List<PermissionInfo> permissionInfos = userService.getAllPermissionInfo();
         // 判断资源是否启用权限约束
         Collection<PermissionInfo> result = getPermissionInfos(requestUri, method, permissionInfos);

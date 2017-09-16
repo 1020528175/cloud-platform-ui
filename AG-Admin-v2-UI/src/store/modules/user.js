@@ -20,7 +20,7 @@ const user = {
     introduction: '',
     roles: [],
     menus: undefined,
-    eleemnts: undefined,
+    elements: undefined,
     setting: {
       articlePlatform: []
     }
