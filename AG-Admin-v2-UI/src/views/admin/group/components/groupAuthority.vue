@@ -121,10 +121,10 @@ export default {
             obj[this.list[i].id] = this.list[i];
           }
           const toggle = {};
-          for (let i = 0; i < data.result.length; i++) {
-            const id = data.result[i]
+          for (let i = 0; i < data.data.length; i++) {
+            const id = data.data[i]
             if (obj[id] !== undefined && toggle[id] === undefined) {
-              this.$refs.elementTable.toggleRowSelection(obj[data.result[i]]);
+              this.$refs.elementTable.toggleRowSelection(obj[data.data[i]]);
               toggle[id] = true;
             }
           }
@@ -176,8 +176,8 @@ export default {
     initAuthoritys() {
       getMenuAuthority(this.groupId).then(data => {
         const result = [];
-        for (let i = 0; i < data.result.length; i++) {
-          result.push(data.result[i].id);
+        for (let i = 0; i < data.data.length; i++) {
+          result.push(data.data[i].id);
         }
         this.$refs.menuTree.setCheckedKeys(result);
       });
