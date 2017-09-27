@@ -1,6 +1,10 @@
 # AG-Admin
 AG-Admin是国内首个基于`Spring Cloud`微`服务`化`开发平台`，具有统一授权、认证后台管理系统，其中包含具备用户管理、资源权限管理、网关API管理等多个模块，支持多业务系统并行开发，可以作为后端服务的开发脚手架。代码简洁，架构清晰，适合学习和直接项目中使用。核心技术采用Eureka、Fegin、Ribbon、Zuul、Hystrix、`JWT Token`、Mybatis等主要框架和中间件，前端采用`vue-element-admin`组件。 
 
+# 郑重声明
+## 虽然本产品是开源产品，但未经本人允许擅自申请专利，将公开追究法律责任。
+
+
 ## 如果有朋友用于实际项目中，欢迎在评论中留言公司名称。后续会放置首页，加以宣传。也欢迎大家支持AG-Admin，打造国内更好的`Spring Cloud`服务平台！
 
 
@@ -97,4 +101,5 @@ Apache License Version 2.0
 
 
 
-
+# 我们的用户
+![img](http://ofsc32t59.bkt.clouddn.com/17-09-20/1505894037577.jpg?imageView2/2/w/200/h/200/format/jpg)
