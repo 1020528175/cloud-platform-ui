@@ -1,11 +1,3 @@
-*/target
-*.iml
-/.idea
-*.class
-target/
-.project
-.settings/
-.classpath
 .DS_Store
 node_modules/
 dist/
