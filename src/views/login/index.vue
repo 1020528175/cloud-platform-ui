@@ -34,13 +34,6 @@ export default {
   },
   name: 'login',
   data() {
-    // const validateEmail = (rule, value, callback) => {
-    //   if (!isWscnEmail(value)) {
-    //     callback(new Error('请输入正确的合法邮箱'));
-    //   } else {
-    //     callback();
-    //   }
-    // };
     const validatePass = (rule, value, callback) => {
       if (value.length < 5) {
         callback(new Error('密码不能小于5位'));
@@ -54,6 +47,17 @@ export default {
         password: 'admin'
       },
       loginRules: {
+        username: [{
+          required: true,
+          message: '账户不能为空',
+          trigger: 'blur'
+        },
+        {
+          min: 3,
+          max: 20,
+          message: '长度在 3 到 20 个字符',
+          trigger: 'blur'
+        }],
         password: [{
           required: true,
           trigger: 'blur',
