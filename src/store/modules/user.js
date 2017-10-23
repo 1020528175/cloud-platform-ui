@@ -9,7 +9,9 @@ import {
   setToken,
   removeToken
 } from 'utils/auth';
-
+import {
+  Message
+} from 'element-ui';
 const user = {
   state: {
     user: '',
@@ -84,9 +86,17 @@ const user = {
       return new Promise((resolve, reject) => {
         loginByEmail(username, userInfo.password).then(response => {
           const data = response;
-          setToken(data.token);
-          commit('SET_TOKEN', data.token);
-          resolve();
+          if (data.status === 500) {
+            Message({
+              message: '账户或密码错误！',
+              type: 'warning'
+            });
+            return Promise.reject('error');
+          } else {
+            setToken(data.token);
+            commit('SET_TOKEN', data.token);
+            resolve();
+          }
         }).catch(error => {
           reject(error);
         });
