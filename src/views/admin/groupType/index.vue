@@ -50,7 +50,7 @@
 </template>
 
     </el-table-column>
-    <el-table-column align="center" label="操作" width="150" fixed="right"><template scope="scope">
+    <el-table-column align="center" label="操作" width="150"><template scope="scope">
   <el-button v-if="groupTypeManager_btn_edit" size="small" type="success" @click="handleUpdate(scope.row)">
     编辑
   </el-button>
