@@ -327,10 +327,12 @@ export default {
     },
     resetTemp() {
       this.form = {
-        username: undefined,
+        code: undefined,
+        type: undefined,
         name: undefined,
-        sex: '男',
-        password: undefined,
+        uri: undefined,
+        menuId: undefined,
+        method: undefined,
         description: undefined
       };
     }
