@@ -105,4 +105,16 @@ export const asyncRouterMap = [{
     name: '操作日志管理',
     authority: 'gateLogManager'
   }]
+}, {
+  path: '/authManager',
+  component: Layout,
+  name: '基础配置管理',
+  icon: 'setting',
+  authority: 'baseManager',
+  children: [{
+    path: 'serviceManager',
+    component: _import('auth/service/index'),
+    name: '用户管理',
+    authority: 'serviceManager'
+  }]
 }];

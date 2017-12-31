@@ -125,12 +125,6 @@ export default {
           required: true,
           message: '请输入资源编码',
           trigger: 'blur'
-        },
-        {
-          min: 3,
-          max: 20,
-          message: '长度在 3 到 20 个字符',
-          trigger: 'blur'
         }
         ],
         type: [{
@@ -151,9 +145,9 @@ export default {
           trigger: 'blur'
         },
         {
-          min: 3,
+          min: 2,
           max: 20,
-          message: '长度在 3 到 20 个字符',
+          message: '长度在 2 到 20 个字符',
           trigger: 'blur'
         }
         ],
