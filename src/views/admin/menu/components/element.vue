@@ -110,7 +110,7 @@ export default {
   data() {
     return {
       methodOptions: ['GET', 'POST', 'PUT', 'DELETE'],
-      typeOptions: ['URI', 'BUTTON'],
+      typeOptions: ['uri', 'button'],
       form: {
         code: undefined,
         type: undefined,

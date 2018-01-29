@@ -106,15 +106,20 @@ export const asyncRouterMap = [{
     authority: 'gateLogManager'
   }]
 }, {
-  path: '/authManager',
+  path: '/monitorManager',
   component: Layout,
-  name: '基础配置管理',
+  name: '监控模块管理',
   icon: 'setting',
-  authority: 'baseManager',
+  authority: 'monitorManager',
   children: [{
-    path: 'serviceManager',
-    component: _import('auth/service/index'),
-    name: '用户管理',
-    authority: 'serviceManager'
+    path: 'serviceEurekaManager',
+    component: _import('monitor/eureka/index'),
+    name: 'Eureka注册中心',
+    authority: 'serviceEurekaManager'
+  }, {
+    path: 'serviceMonitorManager',
+    component: _import('monitor/service/index'),
+    name: '服务状态监控',
+    authority: 'serviceMonitorManager'
   }]
 }];
