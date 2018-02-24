@@ -12,10 +12,11 @@ export function loginByEmail(username, password) {
   });
 }
 
-export function logout() {
+export function logout(token) {
   return fetch({
     url: '/api/auth/jwt/invalid',
-    method: 'post'
+    method: 'post',
+    params: { token }
   });
 }
 
