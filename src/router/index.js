@@ -105,7 +105,21 @@ export const asyncRouterMap = [{
     name: '操作日志管理',
     authority: 'gateLogManager'
   }]
-}, {
+},
+{
+  path: '/authManager',
+  component: Layout,
+  name: '基础配置管理',
+  icon: 'setting',
+  authority: 'authManager',
+  children: [{
+    path: 'serviceManager',
+    component: _import('auth/service/index'),
+    name: '用户管理',
+    authority: 'serviceManager'
+  }]
+},
+{
   path: '/monitorManager',
   component: Layout,
   name: '监控模块管理',
@@ -121,5 +135,10 @@ export const asyncRouterMap = [{
     component: _import('monitor/service/index'),
     name: '服务状态监控',
     authority: 'serviceMonitorManager'
+  }, {
+    path: 'serviceZipkinManager',
+    component: _import('monitor/zipkin/index'),
+    name: '服务状态监控',
+    authority: 'serviceZipkinManager'
   }]
 }];
