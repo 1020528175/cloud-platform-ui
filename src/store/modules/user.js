@@ -86,7 +86,7 @@ const user = {
       return new Promise((resolve, reject) => {
         loginByEmail(username, userInfo.password).then(response => {
           const data = response;
-          if (data.status === 500) {
+          if (data.token === '') {
             Message({
               message: '账户或密码错误！',
               type: 'warning'
