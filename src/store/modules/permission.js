@@ -2,7 +2,7 @@ import {
   asyncRouterMap,
   constantRouterMap
 } from 'src/router'
-import { fetchAll } from 'api/admin/menu/index';
+import { getAllMenus } from 'api/login';
 /**
  * 通过authority判断是否与当前用户权限匹配
  * @param menus
@@ -56,7 +56,7 @@ const permission = {
       commit
     }, menus) {
       return new Promise(resolve => {
-        fetchAll().then(data => {
+        getAllMenus().then(data => {
           const menuDatas = {};
           for (let i = 0; i < data.length; i++) {
             menuDatas[data[i].code] = data[i];

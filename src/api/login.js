@@ -35,3 +35,10 @@ export function getMenus(token) {
     params: { token }
   });
 }
+
+export function getAllMenus() {
+  return fetch({
+    url: '/api/admin/user/front/menu/all',
+    method: 'get'
+  });
+}
