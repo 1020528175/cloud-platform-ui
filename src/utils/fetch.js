@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {
-  Message, MessageBox
+  Message,
+  MessageBox
 } from 'element-ui';
 import store from '../store';
 import {
@@ -54,6 +55,13 @@ service.interceptors.response.use(
       });
       return Promise.reject('error');
     }
+    if (res.status === 40001) {
+      Message({
+        message: '账户或密码错误！',
+        type: 'warning'
+      });
+      return Promise.reject('error');
+    }
     if (response.status !== 200 && res.status !== 200) {
       Message({
         message: res.message,
@@ -65,7 +73,7 @@ service.interceptors.response.use(
     }
   },
   error => {
-    console.log('err' + error); // for debug
+    // console.log(error); // for debug
     Message({
       message: error.message,
       type: 'error',
