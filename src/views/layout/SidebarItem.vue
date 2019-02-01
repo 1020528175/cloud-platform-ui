@@ -8,15 +8,21 @@
 				<span slot="title">{{item.children[0].title}}</span>
 			</el-menu-item>
 		</router-link> -->
-		<el-submenu :index="item.title">
+		<el-submenu :index="item.title" :key="item.name">
 			<template slot="title">
 				<icon-svg v-if='item.icon' :icon-class="item.icon"></icon-svg>
 				<span>{{item.title}}</span>
 			</template>
 			<template v-for="child in item.children">
-				<sidebar-item class='nest-menu' v-if='child.children&&child.children.length>0' :routes='[child]'> </sidebar-item>
-				<router-link v-else :to="'/'+item.code+'/'+child.code">
-					<el-menu-item :index="item.code+'/'+child.code">
+				<sidebar-item class='nest-menu' v-if='child.children&&child.children.length>0' :routes='[child]' :key="child.name"> </sidebar-item>
+				<a target="_blank"  v-if="child.href!=null&&child.href.indexOf('http')==0" :href="child.href" :key="child.name">
+					<el-menu-item :index="'/'+item.code+'/'+child.code">
+						<icon-svg v-if='child.icon' :icon-class="child.icon"></icon-svg>
+						<span>{{child.title}}</span>
+					</el-menu-item>
+				</a>
+				<router-link v-if="child.href!=null&&child.href.indexOf('http')!=0&&child.type!='dirt'"  :to="'/'+item.code+'/'+child.code" :key="child.name">
+					<el-menu-item :index="'/'+item.code+'/'+child.code">
 						<icon-svg v-if='child.icon' :icon-class="child.icon"></icon-svg>
 						<span>{{child.title}}</span>
 					</el-menu-item>
