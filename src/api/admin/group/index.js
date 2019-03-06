@@ -65,7 +65,7 @@ export function modifyUsers(id, data) {
 export function removeElementAuthority(id, data) {
   return fetch({
     url: '/api/admin/group/' + id + '/authority/element/remove',
-    method: 'post',
+    method: 'put',
     params: data
   });
 }
@@ -73,7 +73,7 @@ export function removeElementAuthority(id, data) {
 export function addElementAuthority(id, data) {
   return fetch({
     url: '/api/admin/group/' + id + '/authority/element/add',
-    method: 'post',
+    method: 'put',
     params: data
   });
 }
@@ -88,7 +88,7 @@ export function getElementAuthority(id) {
 export function modifyMenuAuthority(id, data) {
   return fetch({
     url: '/api/admin/group/' + id + '/authority/menu',
-    method: 'post',
+    method: 'put',
     params: data
   });
 }
@@ -97,7 +97,7 @@ export function modifyMenuAuthority(id, data) {
 export function getMenuAuthority(id) {
   return fetch({
     url: '/api/admin/group/' + id + '/authority/menu',
-    method: 'get'
+    method: 'put'
   });
 }
 

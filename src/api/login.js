@@ -15,7 +15,7 @@ export function loginByEmail(username, password) {
 export function logout(token) {
   return fetch({
     url: '/api/auth/jwt/invalid',
-    method: 'post',
+    method: 'get',
     params: { token }
   });
 }
