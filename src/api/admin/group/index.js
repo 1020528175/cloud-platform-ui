@@ -97,7 +97,7 @@ export function modifyMenuAuthority(id, data) {
 export function getMenuAuthority(id) {
   return fetch({
     url: '/api/admin/group/' + id + '/authority/menu',
-    method: 'put'
+    method: 'get'
   });
 }
 
